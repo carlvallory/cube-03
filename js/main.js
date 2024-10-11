@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import CSG from './libs/csg/three-csg.js';
+import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
 
+gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin); 
 
 // Crear la escena
 const scene = new THREE.Scene();
